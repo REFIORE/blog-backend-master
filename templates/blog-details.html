@@ -1,9 +1,9 @@
-  {% extends 'base.html' %}
-  {% load static %}
-  {% block title %}
-    {{post.title}} - Blog Details
-  {% endblock %}
-  {% block content %}
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  {{post.title}} - Blog Details
+{% endblock %}
+{% block content %}
   <!--================ Hero sm Banner start =================-->      
   <section class="mb-30px">
     <div class="container">
@@ -68,12 +68,12 @@
                       <h5><a href="#">{{post.author}}</a></h5>
                       <p class="date">{{post.published_at}}</p>
                       <p class="comment">
-                          {{post.text}}
+                        {{post.text}}
                       </p>
                     </div>
                   </div>
                   <div class="reply-btn">
-                          <a href="" class="btn-reply text-uppercase">reply</a> 
+                    <a href="" class="btn-reply text-uppercase">reply</a> 
                   </div>
                 </div>
               </div>	
